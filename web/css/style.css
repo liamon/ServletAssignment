@@ -1,0 +1,51 @@
+/* 
+    Created on : 21-Oct-2017, 00:30:03
+    Author     : Liam
+*/
+
+/*
+Originally the web pages had no styling, but I
+decided to add some before uploading to GitHub.
+*/
+
+* {
+    font-family: sans-serif;
+    color: midnightblue;
+    background-color: ivory;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label:not([for="contact"]) {
+    /* Idea on next two lines from https://stackoverflow.com/a/23232330 */
+    width: 110px;
+    display: inline-block;
+}
+
+/*
+I don't need to say input before these attribute selectors because
+the specified values for the type attribute will only appear in an input.
+*/
+[type="text"], [type="password"] {
+    font-family: monospace;
+}
+
+[type="submit"] {
+    font-size: 1.125em;
+}
+
+#error {
+    font-variant-caps: small-caps;
+    color: darkred;
+}
+
+.how-long {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#login-success {
+    font-style: italic;
+}

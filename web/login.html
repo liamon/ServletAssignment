@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link href="css/style.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="LoginServlet" method="post">
+            <fieldset>
+                <legend>Login</legend>
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
+                <br><br>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                <br><br>
+                <label for="email">Email address</label>
+                <input type="text" name="email" id="email">
+                <br><br>
+                <input type="checkbox" name="contact" id="contact" checked>
+                <label for="contact">
+                    Yes, I want to be contacted by email for marketing purposes.
+                </label>
+                <br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </body>
+</html>
